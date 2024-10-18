@@ -22,27 +22,11 @@ async def fetch_reddit_stocks():
 	async for submission in subreddit.new(limit=10):
 		post_info = f'{submission.title}\n{submission.url}'
 		posts.append(post_info)
-		#print(post_info)
+		print(post_info)
 	return posts
-
-class GenSamford(discord.Client):
-	async def on_ready(self):
-		channel = self.get_channel('')
-
-		if channel is not None:
-			posts = await fetch_reddit_stocks()
-			for post in posts:
-				await channel.send(post)
-
-intents = discord.Intents.default()
-intents.messages = True
-bot = commands.Bot(command_prefix='!', intents=intents)
-client = GenSamford(intents=intents)
-
-#async def main():
 	
-
 if __name__ == "__main__":
 	asyncio.run(fetch_reddit_stocks())
+	
 	
 
