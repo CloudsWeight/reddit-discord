@@ -1,6 +1,8 @@
 import asyncpraw
 import asyncio
 
+# see https://www.reddit.com/prefs/apps
+# requires valid email address 
 client_id = 'x'
 client_secret = 'x'
 user_agent = 'x x x'
