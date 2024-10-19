@@ -1,0 +1,4 @@
+discord
+python_dotenv
+asyncpraw
+certifi
