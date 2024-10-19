@@ -1,4 +1,4 @@
-![lilmunkeycirc](https://github.com/user-attachments/assets/4d1bacaa-a445-4344-8d60-cb298775b056)
+![lilmunkeycirc](https://github.com/user-attachments/assets/3a7c7e0e-9501-4ad2-aaeb-64686ce20dd5)
 
 # Reddit Discord
 A bot using discord.py and asyncpraw to return 10 results from any subreddit.
