@@ -1,0 +1,3 @@
+discord
+python_dotenv
+asyncpraw
