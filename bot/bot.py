@@ -28,9 +28,12 @@ class GenSam(commands.Bot):
             await ctx.send("pong")
         
         @self.command(name="posts", pass_context=True)
-        async def posts(ctx, subreddit):
+        async def posts(ctx, subreddit): 
+            embed_posts = discord.Embed(title=f"Posts from {subreddit}", description="description about the posts embed here", color=0xFF5700)
             posts = await fetch_reddit_stocks(subreddit)
-            await ctx.send(posts)
+            for i, post in enumerate(posts):
+                embed_posts.add_field(name=f"Post #{i + 1}", value=f"[{post['title']}]({post['url']})", inline=False)
+            await ctx.send(embed=embed_posts)
         
 
 

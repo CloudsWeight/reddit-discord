@@ -22,14 +22,10 @@ async def fetch_reddit_stocks(subreddit):
 	
 	posts = []
 	async for submission in subreddit.new(limit=10):
-		post_info = f'{submission.title}\n{submission.url}'
+		post_info = {"title": submission.title, "url": submission.url}
 		posts.append(post_info)
-		print(post_info)
 
 	return posts
 	
 if __name__ == "__main__":
 	asyncio.run(fetch_reddit_stocks())
-	
-	
-
