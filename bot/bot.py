@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 import os
-from gensamford import fetch_reddit_stocks
+from reddit_discord import fetch_reddit_stocks
 import asyncio
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
