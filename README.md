@@ -23,7 +23,7 @@ A bot using discord.py and asyncpraw to return 10 results from any subreddit.
 - https://developers.reddit.com/
 - https://discord.com/developers/applications
 
-# Install Inscructions
+# Install Instructions
 - git clone
 - cd reddit-discord/bot
 - python -m pip install -r requirememnts.txt
