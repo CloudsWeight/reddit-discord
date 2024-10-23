@@ -3,7 +3,11 @@
 # Reddit Discord
 A bot using discord.py and asyncpraw to return 10 results from any subreddit.  
 - $posts cars top 2 - this command will return the top 2 results for the subreddit news
+  ![image](https://github.com/user-attachments/assets/3220c8b4-edbe-4d03-b62f-b6558806631e)
+
 - $google cars - this will return any results found using degoogle
+![image](https://github.com/user-attachments/assets/3f116d24-2845-4c80-a9b4-0626b1d27fe1)
+
 
 ## To Do
 - Commands:
