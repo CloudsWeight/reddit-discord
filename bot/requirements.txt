@@ -3,4 +3,4 @@ python_dotenv
 asyncpraw
 certifi
 virtualenv
--e git+https://github.com/deepseagirl/degoogle#egg=degoogle
+
