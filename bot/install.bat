@@ -4,14 +4,12 @@ python --version
 
 if %errorlevel% == 0 (
 	python -m pip install -r requirements.txt
-	) else {
+	) else (
 		echo Check Python version or command
 		)
-
+python -m virtualenv venv
+/venv/scripts/activate
 git clone https://github.com/deepseagirl/degoogle
-cd degoogle
-python -m pip install . 
-
-venv/bin/activate
+python -m pip install --user degoogle/.
 echo STARTING BOT
 python bot.py
