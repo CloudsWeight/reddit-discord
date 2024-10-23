@@ -17,7 +17,16 @@ A bot using discord.py and asyncpraw to return 10 results from any subreddit.
 - Messages - Return each post link instead of a list, format each response, create more detailed views.
 - Content - Use more APIs to gather interesting data to post to discord (eg. Financial news, security news,weather reports, youtube)
 - Degoogle - optimize and make search results more robust and relevant
+- Fix install script for degoogle git repository and automatic virtulenv setup
 
 # Developer Links 
 - https://developers.reddit.com/
 - https://discord.com/developers/applications
+
+# Install Inscructions
+- git clone
+- cd reddit-discord/bot
+- python -m pip install -r requirememnts.txt
+- python -m virtualenv venv
+- ./venv/scripts/activate or source ./venv/bin/activate (depending on MS or Linux)
+- python bot.py
